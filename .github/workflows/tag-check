@@ -1,0 +1,17 @@
+name: Tag Check
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  show-tag:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show tag information
+        run: |
+          echo "This workflow was triggered by a tag."
+          echo "GITHUB_REF=${GITHUB_REF}"
+          echo "GITHUB_REF_NAME=${GITHUB_REF_NAME}"
