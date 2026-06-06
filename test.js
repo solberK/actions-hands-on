@@ -3,4 +3,4 @@ const add = require('./index');
 
 assert.strictEqual(add(2, 3), 5);
 
-console.log('Test passed!');
+console.log('PR test passed!');
